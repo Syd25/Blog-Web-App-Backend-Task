@@ -42,11 +42,11 @@ Success message:User Created
 /login:Used for user login
 
 
-#db
+# db
 
 Folder which contains db.js for mongoose database connection.It also contains config.env file for Mongo Api
 
-#middlewares
+# middlewares
 
 It contains 2 files:
 
@@ -55,10 +55,10 @@ It contains 2 files:
 #check-auth.js:
 Uses JWR where the server generates a token that certifies the user identity, and sends it to the client
 
-#models
+# models
 
 It contains Story.js which contains the StorySchema and User.js which contains the UserSchema
 
-#app.js
+# app.js
 
 1.Basic app.js file for the program where the server is running on port 3000.
