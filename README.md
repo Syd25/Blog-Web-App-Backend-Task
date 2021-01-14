@@ -17,21 +17,21 @@ Basically,I have created 3 files for routes:
 
 #stories.js
 
-/add: Route for showing add page
+/add: Route for showing add page.Shows add page of stories which can be an HBS file.eg Stories/add.hbs
 
-/ (GET):Showing all stories
+/ (GET):Showing all stories.Shows index page of stories which can be an HBS file.eg Stories/index.hbs
 
-/ (Post):Process add form
+/ (Post):Process add form.Shows dashboard file for displaying dashboard. eg.dashboard.hbs
 
-/:id:showing single story based on ID
+/:id:showing single story based on ID.Shows show page of stories which can be an HBS file.eg Stories/show.hbs
 
-/edit/:id:Edit the story with Id
+/edit/:id:Edit the story with Id.Shows edit page of stories which can be an HBS file.eg Stories/edit.hbs(Redirect to dashboard)
 
-/:id(Put):Update story(Redirect to Dashboard)
+/:id(Put):Update story(Redirect to Dashboard).If story not found,redirect to error 404 page.If story user not found,redirect to story page.
 
-/:id(Delete):Delete story based on user id(Redirect to Dashboard)
+/:id(Delete):Delete story based on user id(Redirect to Dashboard).If story not found,redirect to error 404 page.If story user not found,redirect to story page.
 
-/user/:userId(get):Displaying user stories based on Id
+/user/:userId(get):Displaying user stories based on Id.Shows index page of stories which can be an HBS file.eg Stories/index.hbs
 
 
 #user.js
@@ -53,7 +53,7 @@ It contains 2 files:
 #header.js
 
 #check-auth.js:
-Uses JWR where the server generates a token that certifies the user identity, and sends it to the client
+Uses JWT where the server generates a token that certifies the user identity, and sends it to the client
 
 # models
 
@@ -61,4 +61,4 @@ It contains Story.js which contains the StorySchema and User.js which contains t
 
 # app.js
 
-1.Basic app.js file for the program where the server is running on port 3000.
+Basic app.js file for the program where the server is running on port 3000.
