@@ -9,13 +9,13 @@ I have created the backend for the blog web application as described in the task
 
 Basically,I have created 3 files for routes:
 
-#index.js
+1)index.js
 
 / :Ensure the guest is logged in and direct to main screen.
 
 /dashboard: Route for displaying all the stories in the dashboard.
 
-#stories.js
+2)stories.js
 
 /add: Route for showing add page.Shows add page of stories which can be an HBS file.eg Stories/add.hbs
 
@@ -34,7 +34,7 @@ Basically,I have created 3 files for routes:
 /user/:userId(get):Displaying user stories based on Id.Shows index page of stories which can be an HBS file.eg Stories/index.hbs
 
 
-#user.js
+3)user.js
 
 /signup:Route for registration
 Success message:User Created
@@ -50,9 +50,10 @@ Folder which contains db.js for mongoose database connection.It also contains co
 
 It contains 2 files:
 
-#header.js
+1)header.js
+Access-Control-Allow-Origin is a CORS header. CORS, or Cross Origin Resource Sharing, is a mechanism for browsers to let a site running at origin A to request resources from origin B.
 
-#check-auth.js:
+2)check-auth.js:
 Uses JWT where the server generates a token that certifies the user identity, and sends it to the client
 
 # models
